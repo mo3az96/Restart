@@ -152,7 +152,7 @@
 
     &:hover {
         img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
     }
 }
@@ -175,111 +175,5 @@
 }
 
 .banners-cont-sec {
-    margin-top: 60px;
-
-    @include xs {
-        margin-top: 40px;
-    }
-
-    .info {
-        padding-left: 19px;
-        align-items: center;
-        width: 262px;
-        right: auto;
-        left: 0;
-
-        @include xs {
-            padding-left: 10px;
-            align-items: flex-end;
-        }
-    }
-
-    .banner-titel {
-        font-size: 26px;
-        font-family: "tajwal";
-        margin-bottom: 0;
-
-        @include xs {
-            font-size: 20px;
-        }
-    }
-
-    .shop-now {
-        width: 126px;
-        height: 36px;
-        border-radius: 40px;
-        background-color: transparent;
-        color: $blue;
-        font-size: 14.4px;
-        font-family: "med";
-        border: 2px solid $blue;
-        margin-top: 14px;
-
-        span {
-            font-size: 16.2px;
-            margin-left: 5px;
-        }
-
-        &:hover {
-            background-color: $blue;
-            color: #fff;
-        }
-
-        @include xs {
-            width: 100px;
-            height: 25px;
-            font-size: 14px;
-        }
-    }
-}
-
-#{$ltr} .banners-cont-sec {
-
-    .info {
-        width: 298px;
-        align-items: center;
-
-        @include xs {
-            align-items: flex-start;
-        }
-    }
-
-    .banner-titel {
-        text-transform: none;
-    }
-
-    .shop-now {
-
-        span {
-            margin-left: 0;
-            margin-right: 5px;
-        }
-    }
-}
-
-.banners-cont-3 {
-    .banner-titel {
-        font-size: 26px;
-        font-family: "bold";
-        margin-bottom: 3px;
-
-        @include xs {
-            font-size: 22px;
-        }
-    }
-
-    .banner-subtitel {
-        font-size: 22px;
-        font-family: "tajwal";
-        margin-bottom: 0;
-        color: $text;
-
-        @include xs {
-            font-size: 18px;
-        }
-    }
-
-    .shop-now {
-        margin-top: 12px;
-    }
+    margin-top: 50px;
 }

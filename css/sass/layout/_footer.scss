@@ -4,7 +4,8 @@
     margin-top: 83px;
 
     @include xs {
-        margin-top: 45px;
+        margin-top: 70px;
+        padding-top: 30px;
     }
 }
 
@@ -24,6 +25,9 @@
     display: inline-block;
     @include transition(all 0.3s ease-in-out);
     font-size: 14px;
+    backface-visibility: hidden;
+    line-height: 1px;
+
 
     &:hover,
     &:focus {

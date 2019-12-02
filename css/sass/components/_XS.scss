@@ -54,13 +54,13 @@
             overflow: hidden;
             right: 0;
             transform-origin: right;
-            @include transition(all 0.4s linear);
+            @include transition(all 0.2s linear);
         }
 
         .nav-in {
             //transform: scaleX(1);
             width: 280px;
-            @include transition(all 0.4s linear);
+            @include transition(all 0.2s linear);
 
             .close-btn {
                 opacity: 1;
@@ -158,7 +158,7 @@
     }
 }
 
-.search-cont {
+.search-form {
     @include xs {
         display: none;
         position: fixed;
@@ -166,8 +166,11 @@
         width: 350px;
         margin: auto;
         margin-top: 175px;
+    }
+}
 
-
+.search-cont {
+    @include xs {
         .search-input {
             background-color: #fff;
             width: 100%;

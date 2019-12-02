@@ -12,16 +12,15 @@
     transition: 0.4s;
 
     &:after {
-        content: "\f067";
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        content: "\e874";
+        font-family: 'Linearicons-Free';
         font-size: 13px;
     }
 
     &.active {
 
         &:after {
-            content: "\f068";
+            content: "\e873";
         }
     }
 

@@ -83,12 +83,12 @@ $(document).ready(function () {
     })
     /////////Menu/////////
     $('.mo-menu-icon').click(function () {
-        $(".navbar-cont").fadeIn(1000);
+        $(".navbar-cont").fadeIn(200);
         $(".mo-navbar").toggleClass("nav-in");
         $("body").toggleClass("overflow");
     });
     $('.navbar-cont').click(function () {
-        $(".navbar-cont").fadeOut(400);
+        $(".navbar-cont").fadeOut(200);
         $(".mo-navbar").toggleClass("nav-in");
         $("body").toggleClass("overflow");
     });
@@ -97,13 +97,13 @@ $(document).ready(function () {
     });
     $('.mo-search-icon').click(function () {
         $(".overlay").fadeIn(500);
-        $(".search-cont").fadeIn(500);
+        $(".search-form").fadeIn(500);
         $("body").toggleClass("overflow");
         $('.search-input').focus();
     });
     $('.overlay').click(function () {
         $("body").removeClass("overflow");
-        $(".search-cont").fadeOut(500);
+        $(".search-form").fadeOut(500);
         $(".overlay").fadeOut(500);
     });
     $('.close-btn').click(function () {
