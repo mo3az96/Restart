@@ -1,4 +1,11 @@
-$(window).on("load", function () { });
+$(window).on("load", function () {
+    $(".loader").fadeOut(500, function () {
+        $('body').css("overflow", "auto");
+        $('body').animate({
+            scrollTop: 0
+        }, 1);
+    });
+});
 $(document).ready(function () {
     /////////Slider/////////
     $('.main-slider').owlCarousel({
