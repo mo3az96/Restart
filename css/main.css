@@ -1342,6 +1342,7 @@ html[dir=ltr] .top-bar .lang span {
   position: absolute;
   width: 13px;
   height: 13px;
+  padding: 2px 0;
   line-height: 13px;
   background-color: #009fe2;
   display: flex;
