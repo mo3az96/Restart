@@ -153,15 +153,15 @@
 #{$ltr} .main-slider {
 
     ///////////dots///////////
-    .info {
-        right: auto;
-        left: 126px;
+    // .info {
+    //     right: auto;
+    //     left: 126px;
 
-        @include xs {
-            left: 15px;
-            right: auto;
-        }
-    }
+    //     @include xs {
+    //         left: 15px;
+    //         right: auto;
+    //     }
+    // }
 
     .slider-head {
         font-size: 34px;

@@ -29,6 +29,11 @@
 #{$ltr} .offer-banner {
     margin-right: 0;
     margin-left: 11px;
+
+    @include sm {
+        margin: 0;
+        margin-top: 10px;
+    }
 }
 
 
@@ -221,6 +226,10 @@
     .info {
         width: 298px;
         align-items: center;
+
+        @include xs {
+            align-items: flex-start;
+        }
     }
 
     .banner-titel {

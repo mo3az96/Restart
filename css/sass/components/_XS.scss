@@ -97,6 +97,13 @@
 }
 
 #{$ltr} .navbar-cont {
+    .lang {
+
+        @include xs {
+            right: auto;
+            left: 25px;
+        }
+    }
 
     @include xs {
         .mo-navbar {

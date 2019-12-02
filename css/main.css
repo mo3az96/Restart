@@ -579,6 +579,12 @@ html[dir=ltr] .newsletter-button:after {
 }
 
 @media (max-width: 767px) {
+  html[dir=ltr] .navbar-cont .lang {
+    right: auto;
+    left: 25px;
+  }
+}
+@media (max-width: 767px) {
   html[dir=ltr] .navbar-cont .mo-navbar {
     right: auto;
     left: 0;
@@ -793,16 +799,6 @@ html[dir=ltr] .newsletter-button:after {
   }
 }
 
-html[dir=ltr] .main-slider .info {
-  right: auto;
-  left: 126px;
-}
-@media (max-width: 767px) {
-  html[dir=ltr] .main-slider .info {
-    left: 15px;
-    right: auto;
-  }
-}
 html[dir=ltr] .main-slider .slider-head {
   font-size: 34px;
   font-family: "xbold";
@@ -1492,6 +1488,12 @@ html[dir=ltr] .offer-banner {
   margin-right: 0;
   margin-left: 11px;
 }
+@media (max-width: 992px) {
+  html[dir=ltr] .offer-banner {
+    margin: 0;
+    margin-top: 10px;
+  }
+}
 
 .banners {
   margin-top: 10px;
@@ -1678,6 +1680,11 @@ html[dir=ltr] .banner .info {
 html[dir=ltr] .banners-cont-sec .info {
   width: 298px;
   align-items: center;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .banners-cont-sec .info {
+    align-items: flex-start;
+  }
 }
 html[dir=ltr] .banners-cont-sec .banner-titel {
   text-transform: none;
