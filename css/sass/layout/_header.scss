@@ -34,6 +34,27 @@
     }
 }
 
+#{$ltr} .top-bar {
+
+    .top-link {
+        margin-left: 0;
+        margin-right: 18px;
+
+        &:last-of-type {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+    }
+
+    .lang {
+
+        span {
+            margin-right: 8px;
+            margin-left: 0;
+        }
+    }
+}
+
 .sec-bar {
     display: flex;
     align-items: center;
@@ -81,6 +102,7 @@
             position: absolute;
             width: 13px;
             height: 13px;
+            line-height: 13px;
             background-color: $blue;
             display: flex;
             align-items: center;
@@ -131,6 +153,33 @@
 
         @include sm {
             display: flex;
+        }
+    }
+}
+
+#{$ltr} .mo-user-nav {
+    .user-anchor {
+        margin-right: 0;
+        margin-left: 18px;
+
+        .mo-text {
+            margin-left: 3px;
+            margin-right: 0;
+        }
+
+        .items {
+            right: auto;
+            left: 12px;
+            top: -5px;
+        }
+    }
+
+    .mo-log-icon {
+        .mo-text {
+            &:after {
+                margin-left: 6px;
+                margin-right: 0;
+            }
         }
     }
 }
@@ -206,5 +255,12 @@
         &:hover {
             color: $text;
         }
+    }
+}
+
+#{$ltr} .drop-menu {
+
+    @include xs {
+        left: 72%;
     }
 }

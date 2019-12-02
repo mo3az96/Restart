@@ -150,6 +150,89 @@
     }
 }
 
+#{$ltr} .main-slider {
+
+    ///////////dots///////////
+    .info {
+        right: auto;
+        left: 126px;
+
+        @include xs {
+            left: 15px;
+            right: auto;
+        }
+    }
+
+    .slider-head {
+        font-size: 34px;
+        font-family: 'xbold';
+        margin-bottom: 5px;
+
+        @include xs {
+            font-size: 20px;
+        }
+    }
+
+    .slider-subhead {
+        font-size: 30px;
+        margin-bottom: 10px;
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+    .slider-desc {
+        font-size: 30px;
+        font-family: 'bold';
+        color: $blue;
+        margin-bottom: 20px;
+
+        @include xs {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .slider-shop-now {
+        color: $blue;
+        width: 140px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 45px;
+        border: 2px solid $blue;
+        background-color: transparent;
+        font-size: 16px;
+        font-family: "med";
+        @include transition(all 0.3s ease-in-out);
+
+        span {
+            font-size: 18px;
+            margin-left: 7px;
+        }
+
+        &:hover {
+
+            background-color: $blue;
+            color: #fff;
+
+        }
+
+        @include xs {
+            font-size: 14px;
+            width: 100px;
+            height: 30px;
+
+            span {
+                font-size: 16px;
+                margin-left: 7px;
+            }
+        }
+    }
+}
+
 .speciales {
     margin-top: 50px;
 
@@ -385,6 +468,19 @@
 
         &:hover {
             background-color: #a8a8a8;
+        }
+    }
+}
+
+#{$ltr} .product {
+
+    .mo-add-to-cart {
+        margin-right: 5px;
+        margin-left: 0;
+
+        span {
+            margin-right: 8px;
+            margin-left: 0;
         }
     }
 }

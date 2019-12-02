@@ -26,6 +26,11 @@
     }
 }
 
+#{$ltr} .offer-banner {
+    margin-right: 0;
+    margin-left: 11px;
+}
+
 
 .banners {
     margin-top: 10px;
@@ -88,6 +93,7 @@
         color: $text;
         font-family: "med";
         margin-bottom: 22px;
+        text-transform: uppercase;
 
         @include xs {
             font-size: 24px;
@@ -131,6 +137,23 @@
         img {
             transform: scale(1.1);
         }
+    }
+}
+
+#{$ltr} .banner {
+
+    &:nth-of-type(2n) {
+        margin-left: 10px;
+        margin-right: 0;
+
+        @include sm {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    .info {
+        align-items: flex-start;
     }
 }
 
@@ -189,6 +212,26 @@
             width: 100px;
             height: 25px;
             font-size: 14px;
+        }
+    }
+}
+
+#{$ltr} .banners-cont-sec {
+
+    .info {
+        width: 298px;
+        align-items: center;
+    }
+
+    .banner-titel {
+        text-transform: none;
+    }
+
+    .shop-now {
+
+        span {
+            margin-left: 0;
+            margin-right: 5px;
         }
     }
 }
