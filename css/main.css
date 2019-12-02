@@ -307,6 +307,12 @@ html[dir=ltr] .search-button {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 767px) {
+  .bootstrap-select .dropdown-menu:not(ul) {
+    margin: auto;
+    width: 100%;
+  }
+}
 .bootstrap-select .dropdown-menu:not(ul) a {
   font-size: 14px;
   color: #333333;
@@ -365,6 +371,11 @@ html[dir=ltr] .bootstrap-select.search-select.dropdown .dropdown-toggle .filter-
 html[dir=ltr] .bootstrap-select .dropdown-menu:not(ul) {
   margin: auto;
   margin-left: 30px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .bootstrap-select .dropdown-menu:not(ul) {
+    margin: auto;
+  }
 }
 
 .newsletter-cont {

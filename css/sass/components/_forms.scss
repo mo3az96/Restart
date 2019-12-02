@@ -205,6 +205,11 @@
             margin-right: 30px;
             @include transition(all 0.3s ease-in-out);
 
+            @include xs {
+                margin: auto;
+                width: 100%;
+            }
+
             a {
                 font-size: 14px;
                 color: $text;
@@ -276,6 +281,9 @@
             margin: auto;
             margin-left: 30px;
 
+            @include xs {
+                margin: auto;
+            }
         }
     }
 }
