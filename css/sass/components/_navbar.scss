@@ -5,6 +5,10 @@
     @include sm {
         display: none;
     }
+
+    @include xs {
+        margin-top: 0;
+    }
 }
 
 .mo-navbar {

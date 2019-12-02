@@ -183,6 +183,41 @@
         margin-bottom: 22px;
     }
 
+    .owl-dots {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include xs {
+            bottom: -30px;
+        }
+    }
+
+    button.owl-dot {
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.502);
+        width: 11px;
+        height: 11px;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        @include transition(all 0.3s ease-in-out);
+        margin: 0 3.5px;
+
+        &:hover {
+            background: $blue;
+        }
+
+        &.active {
+            background: $blue;
+        }
+
+        @include xs {
+            width: 11px;
+            height: 11px;
+        }
+    }
+
     .owl-nav {
         width: 0;
         height: 0;

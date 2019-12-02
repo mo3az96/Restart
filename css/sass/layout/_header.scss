@@ -169,6 +169,10 @@
     opacity: 0;
     @include transition(all 0.3s ease-in-out);
 
+    @include xs {
+        left: 28%;
+    }
+
     &:before {
         content: "";
         width: 0;

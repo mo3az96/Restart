@@ -162,6 +162,11 @@
                     box-shadow: none;
                 }
 
+                &:active {
+                    outline: none !important;
+                    box-shadow: none;
+                }
+
                 .bs-caret {
                     .caret {
                         display: none;
