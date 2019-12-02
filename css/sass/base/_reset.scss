@@ -1,0 +1,19 @@
+body {
+    position: relative;
+    font-family: tajwal;
+
+    &::-webkit-scrollbar {
+        background-color: rgba(#333333, 0.5);
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #009fe2;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #009fe2 rgba(#333333, 0.5);
+}

@@ -1,0 +1,308 @@
+.search-form {
+    @include sm {
+        display: none;
+    }
+}
+
+.search-cont {
+    position: relative;
+    width: 555px;
+    height: 45px;
+
+    @include md {
+        width: 400px;
+    }
+
+    @include sm {
+        width: 350px;
+        margin: auto;
+    }
+}
+
+.search-input {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding-right: 223px;
+    padding-left: 50px;
+    font-size: 14px;
+    text-align: right;
+    color: #bbbbbb;
+    border: 2px solid $blue;
+    @include transition(all 0.3s ease-in-out);
+
+    @include md {
+        padding-right: 170px;
+    }
+
+    @include sm {
+        padding-right: 150px;
+    }
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+        font-size: 14px;
+    }
+
+    &:hover {
+        border: 2px solid $blue;
+    }
+
+    &:focus {
+        border: 2px solid $text;
+
+        &:hover {
+            border: 2px solid $text;
+        }
+    }
+
+
+}
+
+#{$ltr} .search-input {
+    padding-right: 50px;
+    padding-left: 223px;
+    text-align: left;
+
+    @include md {
+        padding-left: 170px;
+        padding-right: 50px;
+    }
+
+    @include sm {
+        padding-left: 150px;
+        padding-right: 50px;
+    }
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
+.search-button {
+    position: absolute;
+    left: -1px;
+    top: 0;
+    border-radius: 50%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: $blue;
+    width: 45px;
+    height: 100%;
+    font-size: 14px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: $blue;
+        background-color: transparent;
+    }
+}
+
+
+#{$ltr} .search-button {
+    left: auto;
+    right: -1px;
+    top: 0;
+    border-radius: 50%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.bootstrap-select {
+    &.search-select {
+        &.dropdown {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            height: 27px;
+            transform: translateY(-50%);
+            border-left: 1px solid #ebebeb;
+
+            &:not(.input-group-btn) {
+                width: 205px;
+
+                @include md {
+                    width: 150px;
+                }
+
+                @include sm {
+                    width: 135px;
+                }
+            }
+
+            .dropdown-toggle {
+                height: 100%;
+                border-radius: 50px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border: none;
+                background-color: transparent;
+                padding: 0;
+                padding-right: 29px;
+                padding-left: 17px;
+
+                @include md {
+                    padding-right: 17px;
+                }
+
+                @include sm {
+                    padding-right: 10px;
+                    padding-left: 10px;
+                }
+
+                &:focus {
+                    outline: none !important;
+                    box-shadow: none;
+                }
+
+                .bs-caret {
+                    .caret {
+                        display: none;
+                    }
+
+                    &:before {
+                        content: "\e874";
+                        font-family: 'Linearicons-Free';
+                        color: #333333;
+                        font-size: 8px;
+                    }
+                }
+
+                .filter-option-inner-inner {
+                    text-align: right;
+                    font-size: 14px;
+                    color: $text;
+                }
+            }
+        }
+    }
+
+    .dropdown-menu {
+        &:not(ul) {
+            margin-top: 12px;
+            border: 1px solid $text;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+
+            a {
+                color: $text;
+                @include transition(all 0.3s ease-in-out);
+
+                &:hover {
+                    background-color: transparent;
+                    color: $blue;
+                }
+
+                &:focus {
+                    background-color: transparent;
+                    color: $blue;
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+
+            .active {
+                a {
+                    background-color: #fff;
+                }
+            }
+        }
+
+        ul {
+            border: none;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
+
+//////////////news///////////////
+
+.newsletter-cont {
+    position: relative;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    width: 100%;
+    height: 45px;
+    border-radius: 50px;
+    padding: 0 34px;
+    font-size: 14px;
+    text-align: right;
+    color: #bbbbbb;
+    border: 2px solid transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+    }
+
+    &:hover {
+        border: 2px solid transparent;
+    }
+
+    &:focus {
+        border: 2px solid $blue;
+
+        &:hover {
+            border: 2px solid $blue;
+        }
+    }
+
+
+}
+
+#{$ltr} .newsletter-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
+.newsletter-button {
+    position: absolute;
+    left: 7px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $blue;
+    width: 35px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $text;
+    }
+
+    &:after {
+        content: "\e879";
+        font-family: 'Linearicons-Free';
+        font-size: 14px;
+        color: #fff;
+    }
+}
+
+#{$ltr} .newsletter-button {
+    left: auto;
+    right: 7px;
+
+    &:after {
+        content: "\e87a";
+    }
+}

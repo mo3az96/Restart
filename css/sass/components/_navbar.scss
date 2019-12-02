@@ -1,0 +1,53 @@
+.navbar-cont {
+    background-color: $blue;
+    margin-top: 17px;
+
+    @include sm {
+        display: none;
+    }
+}
+
+.mo-navbar {
+    display: flex;
+    align-items: center;
+
+    @include md {
+        justify-content: space-between;
+    }
+
+
+    .nav-anchor {
+        font-family: 'med';
+        color: #fff;
+        font-size: 16px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid transparent;
+        @include transition(all 0.3s ease-in-out);
+        padding: 0 12px;
+
+        &:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        @include md {
+            padding: 0;
+        }
+    }
+
+    .nav-li {
+
+        &:last-of-type {
+            .nav-anchor {
+                padding-left: 0;
+            }
+        }
+
+        &:first-of-type {
+            .nav-anchor {
+                padding-right: 0;
+            }
+        }
+    }
+}

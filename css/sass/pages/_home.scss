@@ -1,0 +1,220 @@
+.main-cont {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+
+    @include sm {
+        flex-direction: column;
+    }
+
+    @include xs {
+        margin-top: 20px;
+    }
+}
+
+.offer-banner {
+    margin-right: 11px;
+
+    @include sm {
+        margin: 0;
+        margin-top: 10px;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+
+.banners {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include sm {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+}
+
+.banner {
+    max-width: calc(50% - 5px);
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+
+    @include sm {
+        width: 100%;
+        max-width: none;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &:nth-of-type(2n) {
+        margin-right: 10px;
+
+        @include sm {
+            margin-right: 0;
+        }
+    }
+
+    .info {
+        position: absolute;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding-left: 40px;
+
+        @include md {
+            padding-left: 19px;
+        }
+
+        @include xs {
+            padding-left: 10px;
+        }
+    }
+
+    .banner-titel {
+        font-size: 36px;
+        color: $text;
+        font-family: "med";
+        margin-bottom: 22px;
+
+        @include xs {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .shop-now {
+        width: 119px;
+        height: 33px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 35px;
+        background-color: #fff;
+        color: $text;
+        font-size: 16px;
+        @include transition(all 0.3s ease-in-out);
+
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
+
+        @include xs {
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+
+    img {
+        @include transition(all 0.7s ease-in-out);
+
+        &::parent {
+            display: none;
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.banners-cont-sec {
+    margin-top: 60px;
+
+    @include xs {
+        margin-top: 15px;
+    }
+
+    .info {
+        padding-left: 19px;
+        align-items: center;
+        width: 262px;
+        right: auto;
+        left: 0;
+
+        @include xs {
+            padding-left: 10px;
+            align-items: flex-end;
+        }
+    }
+
+    .banner-titel {
+        font-size: 26px;
+        font-family: "tajwal";
+        margin-bottom: 0;
+
+        @include xs {
+            font-size: 20px;
+        }
+    }
+
+    .shop-now {
+        width: 126px;
+        height: 36px;
+        border-radius: 40px;
+        background-color: transparent;
+        color: $blue;
+        font-size: 14.4px;
+        font-family: "med";
+        border: 2px solid $blue;
+        margin-top: 14px;
+
+        span {
+            font-size: 16.2px;
+            margin-left: 5px;
+        }
+
+        &:hover {
+            background-color: $blue;
+            color: #fff;
+        }
+
+        @include xs {
+            width: 100px;
+            height: 25px;
+            font-size: 14px;
+        }
+    }
+}
+
+.banners-cont-3 {
+    .banner-titel {
+        font-size: 26px;
+        font-family: "bold";
+        margin-bottom: 3px;
+
+        @include xs {
+            font-size: 22px;
+        }
+    }
+
+    .banner-subtitel {
+        font-size: 22px;
+        font-family: "tajwal";
+        margin-bottom: 0;
+
+        @include xs {
+            font-size: 18px;
+        }
+    }
+
+    .shop-now {
+        margin-top: 12px;
+    }
+}
