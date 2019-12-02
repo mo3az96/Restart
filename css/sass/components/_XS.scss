@@ -83,6 +83,14 @@
             white-space: nowrap;
             height: auto;
             border: none;
+
+            &:hover {
+                border: none;
+            }
+
+            &:focus {
+                border: none;
+            }
         }
 
         .lang {

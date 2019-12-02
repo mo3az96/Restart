@@ -162,6 +162,12 @@
         margin-right: 0;
         margin-left: 18px;
 
+        @include xs {
+            &.mo-menu-icon {
+                margin: 0;
+            }
+        }
+
         .mo-text {
             margin-left: 3px;
             margin-right: 0;

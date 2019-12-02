@@ -51,10 +51,10 @@
     }
 
     &:focus {
-        border: 2px solid $blue;
+        border: 2px solid #17b3f5;
 
         &:hover {
-            border: 2px solid $blue;
+            border: 2px solid #17b3f5;
         }
     }
 
@@ -101,6 +101,7 @@
 
     &:hover {
         color: #fff;
+        background-color: #17b3f5;
     }
 }
 

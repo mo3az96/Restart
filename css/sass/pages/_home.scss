@@ -14,6 +14,12 @@
 
 .offer-banner {
     margin-right: 11px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        @include transition(all 0.3s ease-in-out);
+    }
 
     @include sm {
         margin: 0;
@@ -22,6 +28,12 @@
 
         img {
             width: 100%;
+        }
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.05);
         }
     }
 }
@@ -260,6 +272,7 @@
         font-size: 22px;
         font-family: "tajwal";
         margin-bottom: 0;
+        color: $text;
 
         @include xs {
             font-size: 18px;
