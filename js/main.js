@@ -34,7 +34,7 @@ $(document).ready(function () {
     $('.Product-slider').owlCarousel({
         items: 5,
         autoplay: false,
-        margin: 11,
+        margin: 10,
         rtl: document.dir == 'rtl' ? true : false,
         loop: false,
         rewind: true,
