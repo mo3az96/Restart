@@ -292,6 +292,8 @@ html[dir=ltr] .search-button {
 }
 .bootstrap-select.search-select.dropdown .dropdown-toggle .filter-option {
   padding: 0 !important;
+  display: flex;
+  align-items: center;
 }
 .bootstrap-select .dropdown-menu:not(ul) {
   margin: auto;
