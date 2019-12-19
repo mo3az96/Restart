@@ -22,6 +22,10 @@
         &:hover {
             color: $text;
         }
+
+        @include xs {
+            display: none;
+        }
     }
 
     .lang {
@@ -31,6 +35,8 @@
         span {
             margin-left: 8px;
         }
+
+
     }
 }
 
@@ -61,8 +67,10 @@
     justify-content: space-between;
     margin-top: 14px;
 
-    @include xs {
-        flex-direction: column;
+    .logo {
+        @include xs {
+            max-width: 60%;
+        }
     }
 }
 
@@ -71,7 +79,7 @@
     align-items: center;
 
     @include xs {
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     .user-anchor {
@@ -139,13 +147,16 @@
                 display: none;
             }
         }
+
+        @include xs {
+            display: none;
+        }
     }
 
-    .mo-search-icon {
-        display: none;
+    .mo-wishlist-icon {
 
-        @include sm {
-            display: flex;
+        @include xs {
+            display: none;
         }
     }
 

@@ -29,7 +29,7 @@
         align-items: center;
         border-bottom: 2px solid transparent;
         @include transition(all 0.3s ease-in-out);
-        padding: 0 12px;
+        padding: 0 11px;
 
         &:hover {
             border-bottom: 2px solid #fff;
@@ -53,5 +53,9 @@
                 padding-right: 0;
             }
         }
+    }
+
+    .wish-li {
+        display: none;
     }
 }

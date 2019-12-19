@@ -545,7 +545,7 @@ html[dir=ltr] .newsletter-button:after {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  padding: 0 12px;
+  padding: 0 11px;
 }
 .mo-navbar .nav-anchor:hover {
   border-bottom: 2px solid #fff;
@@ -561,6 +561,9 @@ html[dir=ltr] .newsletter-button:after {
 .mo-navbar .nav-li:first-of-type .nav-anchor {
   padding-right: 0;
 }
+.mo-navbar .wish-li {
+  display: none;
+}
 
 .close-btn {
   display: none;
@@ -574,6 +577,35 @@ html[dir=ltr] .newsletter-button:after {
     cursor: pointer;
     color: #bbbbbb;
     opacity: 0;
+  }
+}
+
+.xs-log {
+  display: none;
+}
+@media (max-width: 767px) {
+  .xs-log {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .xs-log .top-link {
+    color: #333333;
+    font-size: 15px;
+    margin-left: 18px;
+  }
+  .xs-log .top-link:last-of-type {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  html[dir=ltr] .xs-log .top-link {
+    margin-right: 18px;
+    margin-left: 0;
+  }
+  html[dir=ltr] .xs-log .top-link:last-of-type {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -640,6 +672,9 @@ html[dir=ltr] .newsletter-button:after {
   }
   .navbar-cont .nav-li:last-of-type {
     margin-left: 0;
+  }
+  .navbar-cont .wish-li {
+    display: block;
   }
   .navbar-cont .nav-anchor {
     color: #333333;
@@ -715,6 +750,8 @@ html[dir=ltr] .newsletter-button:after {
     width: 350px;
     margin: auto;
     margin-top: 175px;
+    transform: translateX(-50%);
+    left: 50%;
   }
 }
 
@@ -1378,6 +1415,11 @@ html[dir=ltr] .product .mo-add-to-cart span {
 .top-bar .top-link:hover {
   color: #333333;
 }
+@media (max-width: 767px) {
+  .top-bar .top-link {
+    display: none;
+  }
+}
 .top-bar .lang {
   display: flex;
   align-items: center;
@@ -1406,8 +1448,8 @@ html[dir=ltr] .top-bar .lang span {
   margin-top: 14px;
 }
 @media (max-width: 767px) {
-  .sec-bar {
-    flex-direction: column;
+  .sec-bar .logo {
+    max-width: 60%;
   }
 }
 
@@ -1417,7 +1459,7 @@ html[dir=ltr] .top-bar .lang span {
 }
 @media (max-width: 767px) {
   .mo-user-nav {
-    margin-top: 10px;
+    margin-top: 0;
   }
 }
 .mo-user-nav .user-anchor {
@@ -1484,12 +1526,14 @@ html[dir=ltr] .top-bar .lang span {
     display: none;
   }
 }
-.mo-user-nav .mo-search-icon {
-  display: none;
+@media (max-width: 767px) {
+  .mo-user-nav .mo-log-icon {
+    display: none;
+  }
 }
-@media (max-width: 992px) {
-  .mo-user-nav .mo-search-icon {
-    display: flex;
+@media (max-width: 767px) {
+  .mo-user-nav .mo-wishlist-icon {
+    display: none;
   }
 }
 .mo-user-nav .mo-menu-icon {
