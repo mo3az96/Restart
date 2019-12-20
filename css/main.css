@@ -587,7 +587,7 @@ html[dir=ltr] .newsletter-button:after {
   .xs-log {
     display: flex;
     justify-content: flex-end;
-    height: 30px;
+    height: 35px;
     align-items: center;
   }
   .xs-log .top-link {
