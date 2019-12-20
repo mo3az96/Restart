@@ -167,6 +167,14 @@
             display: flex;
         }
     }
+
+    .mo-search-icon {
+        display: none;
+
+        @include sm {
+            display: flex;
+        }
+    }
 }
 
 #{$ltr} .mo-user-nav {
@@ -214,6 +222,10 @@
         .user-anchor {
             color: $blue;
         }
+    }
+
+    @include xs {
+        display: none;
     }
 }
 

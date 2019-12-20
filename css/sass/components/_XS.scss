@@ -18,10 +18,12 @@
     @include xs {
         display: flex;
         justify-content: flex-end;
+        height: 30px;
+        align-items: center;
 
         .top-link {
-            color: $text;
-            font-size: 15px;
+            color: #fff;
+            font-size: 13px;
             margin-left: 18px;
 
             &:last-of-type {
@@ -46,6 +48,10 @@
             }
         }
     }
+}
+
+.top-bar-sec {
+    background-color: $blue;
 }
 
 .navbar-cont {
