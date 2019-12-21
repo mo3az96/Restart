@@ -611,8 +611,10 @@ html[dir=ltr] .newsletter-button:after {
   }
 }
 
-.top-bar-sec {
-  background-color: #009fe2;
+@media (max-width: 767px) {
+  .top-bar-sec {
+    background-color: #009fe2;
+  }
 }
 
 .navbar-cont .lang {

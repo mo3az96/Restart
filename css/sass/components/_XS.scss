@@ -51,7 +51,9 @@
 }
 
 .top-bar-sec {
-    background-color: $blue;
+    @include xs {
+        background-color: $blue;
+    }
 }
 
 .navbar-cont {
